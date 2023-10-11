@@ -20,9 +20,9 @@
 #surname = 'krupenina'
 #print(name,surname)
 
-#a='apples'
+a='apples'
 
-#print('i love',a)
+print('i love',a)
 
 print('a','b','c',sep='+',end='!')
 print('d','e','f',sep='-',end='?')
