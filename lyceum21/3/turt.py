@@ -1,0 +1,17 @@
+from turtle import *
+
+mike = Turtle()
+mike.color('gold')
+mike.goto(-100, 0)
+mike.goto(-140, 120)
+mike.goto(-80, 60)
+mike.goto(-60, 160)
+mike.goto(-40, 60)
+mike.goto(0, 180)
+mike.goto(40, 60)
+mike.goto(60, 160)
+mike.goto(80, 60)
+mike.goto(140, 120)
+mike.goto(100, 0)
+mike.home()
+done()
