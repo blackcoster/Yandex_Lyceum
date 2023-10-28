@@ -24,7 +24,7 @@ print(a,b,c,d,e)
 
 # a = int(input())
 # print(a+5)
-print(150//60,150%60)
+print(150//60, 150 % 60)
 
 print(a,b,c,sep='')
 
