@@ -1,6 +1,7 @@
 num = int(input())
 m = int(input())
 
+
 for i in range(num//m):
     if i%2==0:
         for j in range(m):
