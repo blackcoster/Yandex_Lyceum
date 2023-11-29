@@ -28,7 +28,6 @@ for _ in range(2):
     cube.lt(120)
     cube.fd(size)
     cube.lt(60)
-    cube.circle(20)
-cube.end_fill()
+    cube.end_fill()
 cube.ht()
 done()
