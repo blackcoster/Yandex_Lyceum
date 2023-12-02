@@ -1,5 +1,6 @@
 from turtle import done, Turtle
 
+
 cube = Turtle()
 size = int(input())
 c1, c2, c3 = input(), input(), input()
