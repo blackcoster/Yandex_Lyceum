@@ -32,6 +32,7 @@ a = my_set.pop()
 print(a)
 
 my_set = {'a', 'b', 'c'}
+
 print('до удаления:', my_set)
 elem = my_set.pop()
 print('удаленный элемент:', elem)
