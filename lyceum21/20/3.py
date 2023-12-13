@@ -71,9 +71,7 @@
 from turtle import *
 
 point = Turtle()
-step = int(input())
-n = int(input())
-k = int(input())
+step, n, k = int(input()), int(input()), int(input())
 colors = [input() for _ in range(k)]
 size = 2
 point.pu()
