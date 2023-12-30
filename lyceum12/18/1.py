@@ -7,8 +7,11 @@
 #     print()
 #
 
-num = 1984
+p = 1
+num = 1948
 while num != 0:
     digit = num % 10
+    # p*=digit
     print(digit)
     num = num//10
+# print(p)
