@@ -1,5 +1,5 @@
 import json
-from turtle import Turtle, done
+from turtle import Turtle, done,bgcolor,turtles
 
 ann = Turtle()
 bob = Turtle()
@@ -24,3 +24,4 @@ for step in range(3, 200):
         shapes[i].lt(61)
 
 done()
+
