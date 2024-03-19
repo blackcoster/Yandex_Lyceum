@@ -1,5 +1,5 @@
-Солнышко
-from turtle import Turtle, done
+# Солнышко
+from turtle import Turtle, done, bgpic
 
 color = input()
 n = int(input())
@@ -15,7 +15,9 @@ for i in range(n):
     size += 1
 sun.ht()
 done()
-Пазл
+
+
+# Пазл
 from turtle import Screen, done
 
 from PIL import Image
@@ -34,7 +36,9 @@ im_new.save('fon.png')
 sc = Screen()
 sc.bgpic('fon.png')
 done()
-Дерево модерн
+
+
+# Дерево модерн
 from turtle import Turtle, done
 
 bgpic('fon.png')
