@@ -13,6 +13,7 @@ from PIL import Image
 
 # NOT DZ !!!!!!
 
+
 from PIL import Image
 
 for i in range(8):

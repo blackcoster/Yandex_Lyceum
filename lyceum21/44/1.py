@@ -1,6 +1,7 @@
 from PIL import Image
 
 n = int(input())
+
 colors = []
 for i in range(n):
     a = tuple([int(x) for x in input().split()])

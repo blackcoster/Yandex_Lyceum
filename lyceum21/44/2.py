@@ -4,6 +4,7 @@ n = int(input())
 
 im = Image.open('flower.png')
 images = [im]
+
 x, y = im.size
 in_new = Image.new('RGB', (x * (n + 1), y))
 temp = im.copy()

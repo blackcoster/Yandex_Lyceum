@@ -1,4 +1,5 @@
 import random
+
 from turtle import Turtle, done, addshape, setup, bgpic
 
 setup(800, 800, 0, 0)  # установим размер окна и положение
