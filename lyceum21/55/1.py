@@ -1,27 +1,38 @@
 from io import BytesIO
-
+from turtle import done, Screen
 import requests
 from PIL import Image
 
 
-# url='https://geocode-maps.yandex.ru/1.x/?format=json&apikey=40d1649f-0493-4b70-98ba-98533de7710b&geocode= Санкт-петербург Льва Толстого,16'
-
-import requests
-
-API_KEY = "40d1649f-0493-4b70-98ba-98533de7710b"  # ваш ключ
-longlat = input()
-params = {
-    "apikey": API_KEY,
-    "geocode": longlat,
-    "format": "json"
-}
-url = "https://geocode-maps.yandex.ru/1.x/?"
-response = requests.get(url, params=params).json()
+def inc_scale():
+    global z
+    if z < 21:
+        z += 1
+    draw_map()
 
 
+def dec_scale():
+    global z
+    if z > 1:
+        z -= 1
+    draw_map()
 
 
-address = response["response"]["GeoObjectCollection"]["featureMember"][0][
-    "GeoObject"]["metaDataProperty"]["GeocoderMetaData"]["Address"]["formatted"]
-print(address)
+def draw_map():
+    url = f'https://static-maps.yandex.ru/v1?ll={lonlat}&z={z}&apikey=f3a0fe3a-b07e-4840-a1da-06f18b2ddf13'
+    response = requests.get(url)
+    im = Image.open(BytesIO(response.content))
+    #  сохраняем новую карту в новый файл
+    im.save(f"football{z}.png")
+    sc.bgpic(f"football{z}.png")
+    sc.onkey(inc_scale, "Right")
+    sc.onkey(dec_scale, "Left")
 
+
+lonlat = "14.204317,68.149046"
+z = 15
+sc = Screen()
+sc.setup(width=640, height=480)
+sc.listen()
+draw_map()
+done()
